@@ -1,4 +1,48 @@
-body{
-    background-color: #f0f0f0;
-    color: #333;
+/* Remove default spacing from the browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Basic body style */
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: white;
+}
+
+
+/* NAVIGATION BAR*/
+
+header {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* realme logo */
+.logo {
+    color: #ffc800;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+/* Navigation links */
+nav a {
+    text-decoration: none;
+    color: #222;
+
+    margin-left: 25px;
+
+    font-size: 16px;
 }
