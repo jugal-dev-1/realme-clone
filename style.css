@@ -112,8 +112,6 @@ a {
 .user-profile {
     width: 30px;
     height: 30px;
-    background: #ffc915;
-    border-radius: 50%;
 }
 
 /* =========================
@@ -122,7 +120,7 @@ a {
 
 .hero {
     height: 400px;
-    background-image: url("hero-bg.jpg");
+    background-image: url("images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
@@ -174,79 +172,115 @@ a {
     margin-top: 25px;
 }
 
+/* background video */
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Forces the video to fill the section without stretching */
+    object-fit: cover;
+    /* Keeps the video behind your text content */
+    z-index: -1;
+}
+
 /*SECTION 2 - REALME P4s*/
 
+.bg-img {
+    width: 100%;
+    height: 100%;
+}
+
 .p4s-section {
+    background-image: url("images/realme_P4s_bg.webp");
+    /* back to the original: shows the whole image */
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    
+    height: auto;                /* let aspect-ratio control the height */
+    aspect-ratio: 2.73 / 1;      /* width ÷ height of the real banner */
+    background-size: cover;
+}
+
+/* 16 Pro plus section */
+
+.pro-section {
     height: 640px;
-    background: #f5f6f7;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
+    background-image: url("images/sixteenProplus.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
     overflow: hidden;
 }
 
 
 .p4s-content {
-    width: 45%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+     left: 9.7%;
+    width: 520px;
 }
 
-.p4s-content h2 {
-    font-size: 58px;
-    font-weight: 400;
-    color: #111;
-    margin-bottom: 20px;
-}
 
+/* Product logo inside the section */
+.p4s-content img {
+    display: block;
+    width: 337px;               
+    height: auto;
+}
 
 /* 5G */
 
-.p4s-content h2 span {
-    font-size: 24px;
-    border: 2px solid #111;
-    border-radius: 15px;
-    padding: 3px 8px;
-    vertical-align: middle;
-}
+
 
 
 /* Main heading */
 
 .p4s-content h3 {
-    font-size: 32px;
-    font-weight: 500;
     color: #111;
-    margin-bottom: 25px;
+     font-size: 27px;
+    font-weight: 600;
+    margin-top: 18px;            /* gap under the logo */
+    margin-bottom: 18px;  
 }
 
 
 /* Features */
 
 .p4s-content p {
-    font-size: 17px;
-    line-height: 1.6;
+     font-size: 16px;
+    line-height: 1.4;
     color: #111;
     margin: 0;
 }
 
 .p4s-buttons {
-    margin-top: 35px;
+    margin-top: 75px;
 }
 
 .p4s-btn {
     display: inline-block;
     background: #dcdcdc;
     color: #111;
-    padding: 15px 40px;
+    padding: 11px 36px;
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     margin-right: 15px;
+    transition: 0.3s ease;
 }
 
 
 .p4s-btn:hover {
-    background: #cfcfcf;
+    background: #000;
+    color: #fff;
 }
+
 
 .p4s-image {
     width: 55%;
@@ -276,6 +310,7 @@ a {
 .btn-buy {
     background: white;
     color: black;
+
 }
 
 /* Learn button */
